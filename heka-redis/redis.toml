@@ -1,0 +1,20 @@
+[hekad]
+maxprocs = 2
+
+[LogInput]
+type = "LogstreamerInput"
+log_directory = "/tmp/"
+file_match = "heka.log"
+
+[PayloadEncoder]
+append_newlines = true
+
+[LogOutput]
+message_matcher = "TRUE"
+encoder = "PayloadEncoder"
+
+[RedisOutput]
+address = "127.0.0.1:6379"
+key = "heka"
+message_matcher = "TRUE"
+encoder = "PayloadEncoder"
