@@ -13,8 +13,10 @@ Refer to Heka's offical <a href="http://hekad.readthedocs.org/en/latest/installi
 
 Example:
 
+```cpp
 [RedisOutput]
 address = "127.0.0.1:6379"
 key = "heka"
 message_matcher = "TRUE"
 encoder = "PayloadEncoder"
+```
