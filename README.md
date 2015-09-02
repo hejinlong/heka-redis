@@ -12,7 +12,7 @@ and build heka.
 
 Refer to Heka's offical [Building External Plugins](http://hekad.readthedocs.org/en/latest/installing.html#build-include-externals) docs for more details.
 
->##Motto of Go: “Do more with less code”
+>###Motto of Go: “Do more with less code”
 
 Example:
 
